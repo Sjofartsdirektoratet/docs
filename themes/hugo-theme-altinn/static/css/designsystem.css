@@ -14332,7 +14332,7 @@ a.a-linkFeatured[href^="http"]:not([href*='altinn.no'])::after {
     .a-globalNav .navbar-toggler {
       width: 75px; } }
   .a-globalNav .navbar-toggler::after {
-    content: 'meny'; }
+    content: 'menu'; }
   .a-globalNav .navbar-toggler[data-jsexpanded='true'] {
     color: #FFFFFF;
     background: #0062BA; }
@@ -14341,7 +14341,7 @@ a.a-linkFeatured[href^="http"]:not([href*='altinn.no'])::after {
         display: none;
         line-height: 0; } }
     .a-globalNav .navbar-toggler[data-jsexpanded='true']::after {
-      content: 'lukk'; }
+      content: 'close'; }
 
 .a-globalNav .dropdown .dropdown-menu {
   display: block; }
