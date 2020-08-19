@@ -1,0 +1,7 @@
+public
+*.exe
+*.doc
+*.docx
+*.db
+.vs
+.DS_Store
