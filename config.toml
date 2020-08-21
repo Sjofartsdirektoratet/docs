@@ -1,4 +1,4 @@
-baseURL = "https://Sjofartsdirektoratet.github.io/"
+baseURL = "https://sdir-h-cdnep-externalapi.azureedge.net/"
 languageCode = "en"
 defaultContentLanguage = "en"
 

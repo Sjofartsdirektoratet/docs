@@ -30,7 +30,7 @@ jumbotron: true
 
 <div class="a-card a-cardImage mt-3 mb-3">
   <div class="a-cardImage-text">
-    <a href="/api/" class="a-linkFeatured">
+    <a href="/release-notes/" class="a-linkFeatured">
       Release notes
       <i class="ai ai-sm ai-nw ai-nw-right ai-arrowright"></i>
     </a>
