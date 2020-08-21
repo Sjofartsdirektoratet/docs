@@ -1,6 +1,6 @@
 ---
 title: Seagoing
-description: Seagoing service is the period a seafarer has signed on board a ship and used as the basis for issuing certificates. As a shipowner the Seagoing API is used to register seagoing service on a specific seafarer or several seafarers. The seagoing service is connected to a position on board a specific ship, the accepted positions are listed in table 1.
+description: Seagoing service is the period a seafarer has signed on board a ship and is used as the basis for issuance of certificates. As a shipowner the Seagoing API is used to register seagoing service on a specific seafarer or several seafarers. The seagoing service is connected to a position on board a specific ship, the accepted positions are listed in table 1.
 toc: true
 weight: 4
 ---
