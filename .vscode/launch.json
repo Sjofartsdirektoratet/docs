@@ -5,7 +5,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Altinn docs",
-            "url": "http://localhost:1313/docs",
+            "url": "http://localhost:1313",
             "preLaunchTask": "Hugo"
         }
     ]

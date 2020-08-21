@@ -17,7 +17,7 @@ git clone https://github.com/Sjofartsdirektoratet/docs
 ## Build / Edit / Test
 
 1. Open the docs repo-folder in visual studio code (or another editor)
-2. Run `hugo server` or click "Sdir docs" (Ctrl-Shift-D) in vs code. This generates the site and opens Chrome at http://loalhost:1313/docs/
+2. Run `hugo server` or click "Sdir docs" (Ctrl-Shift-D) in vs code. This generates the site and opens Chrome at http://loalhost:1313/
 3. Edit any file in the `content`-folder to get a new build of the site refreshed in your browser.
 
 ## Deploy
