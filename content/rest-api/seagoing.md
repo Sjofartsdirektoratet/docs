@@ -10,8 +10,10 @@ weight: 4
 The latest version of this API can be found deployed in our test environment at: https://sdir-d-apim-common.portal.azure-api.net/docs/services/sdir-d-api-aps-seagoing.
 {{% /panel %}}
 
-The positions availeble for reporting with the respective STYRK code are listed in table 1. This list can also be obtained with XXX command. The table instances are listed in norwegian. 
+The positions available for reporting with the respective STYRK code are listed in table 1. This list can also be obtained with XXX command. The table instances are listed in norwegian. 
+
 **Table 1**
+
 | Category   | STYRK title                | STYRK code |
 |------------|----------------------------|------------|
 | Dekk       | Skipsfører                 | 3142118    |
