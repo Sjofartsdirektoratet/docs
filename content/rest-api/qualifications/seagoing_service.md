@@ -1,6 +1,7 @@
 ---
 title: Seagoing Service
-description: Seagoing service is the period a seafarer has signed on board a ship and is used as the basis for issuance of certificates. As a shipowner the Seagoing API is used to register seagoing service on a specific seafarer or several seafarers. The seagoing service is connected to a position on board a specific ship, the accepted positions are listed in table 1.
+description: Seagoing service is the period a seafarer has signed on board a ship and is used as the basis for issuance of certificates. As a shipowner the Seagoing API is used to register seagoing service on a specific seafarer or several seafarers. Seagoing service is accepted when the sender is a ship owner, or an appointed representative i.e Master and Chief Engineer. 
+toc: true 
 toc: true
 weight: 4
 ---
@@ -10,7 +11,8 @@ weight: 4
 The latest version of this API can be found deployed in our test environment at: https://sdir-d-apim-common.portal.azure-api.net/docs/services/sdir-d-api-aps-seagoing.
 {{% /panel %}}
 
-The positions available for reporting with the respective STYRK code are listed in table 1. This list can also be obtained with XXX command. The table instances are listed in norwegian. 
+## Meta data
+The positions available for reporting with the respective STYRK codes are listed in norwegian in **Table 1**. This list can also be obtained with XXX API command.
 
 **Table 1**
 
