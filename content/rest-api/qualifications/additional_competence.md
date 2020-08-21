@@ -39,29 +39,29 @@ Accept: application/json
 Response:
 ```JSON
 {
-    "Name": "HÅKON TRANA",
-    "AddressLine1": "",
-    "AddressLine2": "Borgermester Platous gate 7",
-    "AddressLine3": "5008 BERGEN",
-    "UserName": "haakon@trana.net",
-    "MobileNumber": "99988888",
-    "PreferredLanguage": "NorwegianNO",
-    "ShowClientUnits": true,
-    "PrivateConsent": true,
-    "ProfessionalConsent": true,
-    "ContactInformation": {
-        "Email": "haakon@trana.net",
-        "Mobile": "99988888",
-        "RequestsEmailReceipts": false
-    },
-    "_links": {
-        "self": {
-            "href": "https://www.altinn.no/api/my/profile"
-        },
-        "portalview": {
-            "href": "https://www.altinn.no/Pages/Profile/MyUserSettings.aspx"
-        }
-    }
+    // "Name": "HÅKON TRANA",
+    // "AddressLine1": "",
+    // "AddressLine2": "Borgermester Platous gate 7",
+    // "AddressLine3": "5008 BERGEN",
+    // "UserName": "haakon@trana.net",
+    // "MobileNumber": "99988888",
+    // "PreferredLanguage": "NorwegianNO",
+    // "ShowClientUnits": true,
+    // "PrivateConsent": true,
+    // "ProfessionalConsent": true,
+    // "ContactInformation": {
+    //     "Email": "haakon@trana.net",
+    //     "Mobile": "99988888",
+    //     "RequestsEmailReceipts": false
+    // },
+    // "_links": {
+    //     "self": {
+    //         "href": "https://www.altinn.no/api/my/profile"
+    //     },
+    //     "portalview": {
+    //         "href": "https://www.altinn.no/Pages/Profile/MyUserSettings.aspx"
+    //     }
+    // }
 }
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: Seagoing
+title: Seagoing Service
 description: Seagoing service is the period a seafarer has signed on board a ship and is used as the basis for issuance of certificates. As a shipowner the Seagoing API is used to register seagoing service on a specific seafarer or several seafarers. The seagoing service is connected to a position on board a specific ship, the accepted positions are listed in table 1.
 toc: true
 weight: 4
@@ -49,28 +49,28 @@ Accept: application/json
 Response:
 ```JSON
 {
-    "Name": "HÅKON TRANA",
-    "AddressLine1": "",
-    "AddressLine2": "Borgermester Platous gate 7",
-    "AddressLine3": "5008 BERGEN",
-    "UserName": "haakon@trana.net",
-    "MobileNumber": "99988888",
-    "PreferredLanguage": "NorwegianNO",
-    "ShowClientUnits": true,
-    "PrivateConsent": true,
-    "ProfessionalConsent": true,
-    "ContactInformation": {
-        "Email": "haakon@trana.net",
-        "Mobile": "99988888",
-        "RequestsEmailReceipts": false
-    },
-    "_links": {
-        "self": {
-            "href": "https://www.altinn.no/api/my/profile"
-        },
-        "portalview": {
-            "href": "https://www.altinn.no/Pages/Profile/MyUserSettings.aspx"
-        }
-    }
+    // "Name": "HÅKON TRANA",
+    // "AddressLine1": "",
+    // "AddressLine2": "Borgermester Platous gate 7",
+    // "AddressLine3": "5008 BERGEN",
+    // "UserName": "haakon@trana.net",
+    // "MobileNumber": "99988888",
+    // "PreferredLanguage": "NorwegianNO",
+    // "ShowClientUnits": true,
+    // "PrivateConsent": true,
+    // "ProfessionalConsent": true,
+    // "ContactInformation": {
+    //     "Email": "haakon@trana.net",
+    //     "Mobile": "99988888",
+    //     "RequestsEmailReceipts": false
+    // },
+    // "_links": {
+    //     "self": {
+    //         "href": "https://www.altinn.no/api/my/profile"
+    //     },
+    //     "portalview": {
+    //         "href": "https://www.altinn.no/Pages/Profile/MyUserSettings.aspx"
+    //     }
+    // }
 }
 ```
