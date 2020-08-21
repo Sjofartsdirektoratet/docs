@@ -2,7 +2,7 @@
 title: Course
 description: The Course API is used to register information approved course providers and courses that are currently availible.
 toc: true
-weight: 3
+weight: 2
 ---
 
 {{% panel %}}
