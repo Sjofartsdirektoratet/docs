@@ -36,6 +36,7 @@ The positions available for reporting with the respective STYRK code are listed 
 | Andre      | Los                        | 3142104    |
 |            | Radiooperatør (skip)       | 3132108    |
 |            | Fisker                     | 6411104    |
+
 ## Get Additional competence
 
 GET operation for additional competence:
