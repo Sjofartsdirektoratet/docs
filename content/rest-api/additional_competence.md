@@ -1,6 +1,6 @@
 ---
 title: Additional Competence
-description: The Additional Competence API is used to register additional information about a person that is relevant when applying for a seafarer license.
+description: The Additional Competence API is used to register Additional Qualifications obtained by a seafarer that is relevant when applying for a Certificate of Competence. Additional Competence is accepted when the sender is a ship owner, or an appointed representative i.e Sjøkaptein and maskinsjeg
 toc: true
 weight: 2
 ---
