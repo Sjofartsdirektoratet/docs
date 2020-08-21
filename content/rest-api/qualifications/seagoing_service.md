@@ -2,7 +2,6 @@
 title: Seagoing Service
 description: Seagoing service is the period a seafarer has signed on board a ship and is used as the basis for issuance of certificates. As a shipowner the Seagoing API is used to register seagoing service on a specific seafarer or several seafarers. Seagoing service is accepted when the sender is a ship owner, or an appointed representative i.e Master and Chief Engineer. 
 toc: true 
-toc: true
 weight: 4
 ---
 
