@@ -1,0 +1,33 @@
+# Build pipeline for the 'github/Sjofartsdirektoratet/docs' repository
+
+name: docs.$(Date:yyyyMMdd)$(Rev:.r)
+
+trigger:
+  branches:
+    include:
+      - master
+
+jobs:
+  - job: build_site
+    pool:
+      vmImage: "ubuntu-latest"
+
+    steps:
+      - task: Docker@2
+        displayName: Build Hugo site
+        inputs:
+          command: run
+          arguments: -v $(System.DefaultWorkingDirectory):/code -w /code klakegg/hugo:0.73.0-alpine --gc --minify
+
+      - task: CopyFiles@2
+        displayName: "Artifact: add files"
+        inputs:
+          SourceFolder: "$(System.DefaultWorkingDirectory)/public"
+          Contents: "**"
+          TargetFolder: "$(Build.ArtifactStagingDirectory)/"
+
+      - task: PublishPipelineArtifact@0
+        displayName: "Artifact: publish"
+        inputs:
+          artifactName: "release_$(Build.BuildId)"
+          targetPath: "$(Build.ArtifactStagingDirectory)"
