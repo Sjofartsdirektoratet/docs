@@ -10,7 +10,7 @@ jumbotron: true
 
 <div class="a-card a-cardImage mt-3 mb-3">
   <div class="a-cardImage-text">
-    <a href="/getting-started/" class="a-linkFeatured ">
+    <a href="/get-started/" class="a-linkFeatured ">
       Getting started
       <i class="ai ai-sm ai-nw ai-nw-right ai-arrowright"></i>
     </a>
@@ -20,7 +20,7 @@ jumbotron: true
 
 <div class="a-card a-cardImage mt-3 mb-3">
   <div class="a-cardImage-text">
-    <a href="/api/" class="a-linkFeatured">
+    <a href="/rest-api/" class="a-linkFeatured">
       Sdir REST API
       <i class="ai ai-sm ai-nw ai-nw-right ai-arrowright"></i>
     </a>
