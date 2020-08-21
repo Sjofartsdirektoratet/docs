@@ -1,6 +1,6 @@
 ---
 title: Additional Competence
-description: The Additional Competence API is used to register Additional Qualifications obtained by a seafarer that is relevant when applying for a Certificate of Competence. Additional Competence is accepted when the sender is a ship owner, or an appointed representative i.e Master and Chief Engineer. The accepted additional Competences are listed in table 1.
+description: The Additional Competence API is used to register Additional Qualifications obtained by a seafarer that is relevant when applying for a Certificate of Competence. Additional Competence is accepted when the sender is a ship owner, or an appointed representative i.e Master and Chief Engineer. 
 toc: true
 weight: 2
 ---
@@ -9,6 +9,9 @@ weight: 2
 **Development environment API URL** <br>
 The latest version of this API can be found deployed in our test environment at: https://sdir-d-apim-common.portal.azure-api.net/docs/services/sdir-d-api-aps-additionalcompetence.  
 {{% /panel %}}
+
+## Meta data
+The Norwegian Maritime Authority will accept the additional competence listed in Table 1. 
 
 **Table 1**
 
