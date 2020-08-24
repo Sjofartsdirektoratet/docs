@@ -38,17 +38,27 @@ The positions available for reporting with the respective STYRK codes are listed
 |            | Radiooperatør (skip)       | 3132108    |
 |            | Fisker                     | 6411104    |
 
-## Get Additional competence
+## Available fuctionality 
 
-GET operation for additional competence:
-```HTTP
-GET https://sdir-d-apim-common.azure-api.net/aps-additionalcompetence/additionalcompetence/v1/additionalcompetence/{id} HTTP/1.1
-Ocp-Apim-Subscription-Key: myAPIKey
-Accept: application/json
-```
+**Add a service report**
+POST operation to add a new seagoing service report on one seafarer. 
 
-Response:
-```JSON
-{
-}
-```
+**Add list of service report**
+POST operation to add more than one seagoing service report on one or several seafarers. 
+
+**Get service report by uid**
+GET operation to obtain a seagoing service report by the *uid* obtained in the respone from a previously delivered report.
+
+**Update service report**
+PUT operation to update a seagoing service reports. The *uid* is obtained in the respone of a previously delivered report, and is mandatory.
+
+**Update list of service reports** 
+PUT operation to update a list of seagoing service reports. The *uid* is obtained in the respone of a previously delivered report, and is mandatory.
+
+
+
+
+
+
+
+
