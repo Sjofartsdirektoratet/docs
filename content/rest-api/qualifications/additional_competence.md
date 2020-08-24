@@ -29,34 +29,12 @@ The Norwegian Maritime Authority will accept the additional competence listed in
 | UTMOB8   | Føring av mob-båt og redningsfarkost - 8 timers utsjekk                                                             |
 | GOLALG   | Grunnleggende opplæring i sikre laste- og losseoperasjoner gasstankskip                                             |
 
-## Get Additional competence
+## Available functionality 
 
-GET operation for additional competence:
-```HTTP
-GET https://sdir-d-apim-common.azure-api.net/aps-additionalcompetence/additionalcompetence/v1/additionalcompetence/{id} HTTP/1.1
-Ocp-Apim-Subscription-Key: myAPIKey
-Accept: application/json
-```
+**Add additional competance report** 
 
-Response:
-```JSON
-{
-}
-```
+**Add list of additional competance reports** 
 
-## Put Additional competence
 
-Update an additional competence
 
-## Post Additional competence
- 
-Create a new additional competence for a person
-
-## Put Batch Additional competence
-
-Update a list of additional competences
-
-## Post Batch Additional competence
-
-Create multiple additional competences
 
