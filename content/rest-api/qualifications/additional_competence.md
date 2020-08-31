@@ -32,22 +32,28 @@ The Norwegian Maritime Authority will accept the additional competence listed in
 ## Available functionality 
 
 **Add additional competance report** 
+
 POST operation to register additional competance. 
 
 **Add list of additional competance reports** 
+
 POST operation to register additional competance on more than one seafarer, or several additional competances. 
 
 **Get additional competance using user ID**
+
 GET operation to access previous delieverd additional competance using the UID. 
 
 
 **Get additional competances using user ID**
+
 GET operation to access more than one previous delieverd additional competance using UIDs. 
 
 **Updae an additional competance**
+
 PUT operation to update an already reported additional competance using the UID. 
 
 **Update list of additional competance**
+
 PUT operation to update a list of already reported additional competances using the UID. 
 
 
