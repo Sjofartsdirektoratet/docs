@@ -15,10 +15,7 @@ An OpenAPI definition can then be used by documentation generation tools to disp
 
 ## Authentication with API-key
 
-For the first version of the Sdir REST API we only have the option of authentication with an API key. We will at a later time add the option to authenticate through [Maskinporten](https://samarbeid.difi.no/felleslosninger/maskinporten). 
-An API key can be obtained by contacting Sdir.
-
-The API key is passed as a variable in the header on each REST request. Use the header name `Ocp-Apim-Subscription-Key` and the API key you have been provided ie '1bd956a7-26a4-41f7-822b-c37d2f032d4f' as the value.
+To be able to use Sdir public services you need to ble able to authenticate to Sdir and have the necessary permissions. In order to consume Sdir public services a Maskinporten-integration need to be established. For more information regarding how to configure and use Maskinporten-integration, please see [Slik bruker du Maskinporten som API-konsument](https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html)
 
 ## Format 
 
