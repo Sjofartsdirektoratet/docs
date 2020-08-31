@@ -10,7 +10,7 @@ weight: 4
 The latest version of this API can be found deployed in our test environment at: https://sdir-d-apim-common.portal.azure-api.net/docs/services/sdir-d-api-aps-seagoing.
 {{% /panel %}}
 
-## Meta data
+## STYRK codes
 The positions available for reporting with the respective STYRK codes are listed in norwegian in **Table 1**. This list can also be obtained with XXX API command.
 
 **Table 1**
