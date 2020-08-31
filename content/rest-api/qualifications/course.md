@@ -21,6 +21,7 @@ GET operation to obtain a list of already reported education and courses using t
 
 **Get a list of seafareses who have completed a course**
 
+GET operation to obtain a list of seafarers that have completed a course at the organization you are representing. 
 
 **Get an existing course registration from the register**
 
