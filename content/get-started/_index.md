@@ -16,7 +16,7 @@ In order to consume Sdir public services a Maskinporten-integration need to be e
 3. You will then receive a Bearer Token to access our services
 
 ### Create keystore
-To create a keystore you first need a Enterprise Certificate, This can be obtained by...
+To create a keystore you first need a Enterprise Certificate. The enterprise certificate can be ordered from [Commfides](https://www.commfides.com/commfides-virksomhetssertifikat/) or [Buypass](https://www.buypass.no/produkter/virksomhetssertifikat-esegl)
 
 Once you have a valid Enterprise Certificate you need to add it to a Keystore file for Java to be able to use it. We use [Keystore Explorer](https://keystore-explorer.org/)
 
