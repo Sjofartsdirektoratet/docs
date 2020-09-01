@@ -51,4 +51,4 @@ java -jar target\jwt-grant-generator-1.0-SNAPSHOT-jar-with-dependencies.jar clie
 
 ### Token
 
-The output from jwt-grant-generator contains the access token retrieved from Maskinporten. Thisi can then be used when acessing the API
+The output from jwt-grant-generator contains the access token retrieved from Maskinporten. This can then be used when acessing the API
