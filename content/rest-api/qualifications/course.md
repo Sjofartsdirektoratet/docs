@@ -89,6 +89,7 @@ The reported courses and educations will be validated against the organization d
 
 
 **Table 3 - Educational codes**
+
 | Utdanningskoder                                                                | Kode            |
 |--------------------------------------------------------------------------------|-----------------|
 |     Dekksoffiser ledelsesnivå   - Vitnemål STCW A-II/2                         |     VD2         |
