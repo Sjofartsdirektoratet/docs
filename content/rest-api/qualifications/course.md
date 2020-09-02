@@ -141,5 +141,6 @@ PATCH operation to updata an already registered course using the *uid* receieved
 
 **Updae an existing course registration**
 
-PUT operation to update "completedAt"  in an exisiting course registration using the *uid* receieved in the response from an earlier report.    
+PUT operation to update "completedAt"  in an exisiting course registration using the *uid* receieved in the response from an earlier report.  
+  
 
