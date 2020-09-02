@@ -1,54 +1,45 @@
 ---
 title: Getting started
-description: To be able to use Sdir public services you need to ble able to authenticate to Sdir and have the necessary permissions. 
+description: Documentation for basic introduction to the APIs and their usage. 
 weight: 5
 aliases:
 - /getting-started/
 ---
 
-## Maskinporten integration 
+## Getting started using the apis
 
-In order to consume Sdir public services a Maskinporten-integration need to be established. For more information regarding how to configure and use Maskinporten-integration, please see [Maskinporten - API-konsument](https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html)
+There are many ways you could use for accessing the api. For exampl making your own client or using a tool like [Postman](https://www.postman.com/). This guide will explain it with a built in browser based tool.
 
-### Short Story
-1. Create a Keystore containing your organisation's Enterprise Certificate
-2. Run jwt-grant-generator targeting Maskinporten
-3. You will then receive a Bearer Token to access our services
+To use the apis you login to the [development portal](https://sdir-d-apim-common.developer.azure-api.net/apis), there you can access the api from a web based frontend.
 
-### Create keystore
-To create a keystore you first need a Enterprise Certificate. The Enterprise Certificate can be ordered from [Commfides](https://www.commfides.com/commfides-virksomhetssertifikat/) or [Buypass](https://www.buypass.no/produkter/virksomhetssertifikat-esegl)
+### Getting token
 
-Once you have a valid Enterprise Certificate you need to add it to a Keystore file for Java to be able to use it. We use [Keystore Explorer](https://keystore-explorer.org/)
+To access the api and data within you need a valid Bearer token, obtaining this is covered in [this guide](token.md). Once you have a valid Bearer Token you can access data relevant to your organisation.
 
-1. From Windows Explorer open the Certificate in Keystore explorer and unlock it using the provided password if prompted.
-2. Save the keystore to a suitable location, preferably in the same folder as jwt-grant-generator, name is something suitable, for expample "sdir_test_keys.jks"
+### Navigating APIs
 
-### Run Jwt-grant-generator
-First Clone [jwt-grant-generator](https://github.com/difi/jwt-grant-generator) in a suitable location on your computer. You then put the keystore in the program folder.
+The first page allows you to navigate the different APIs
 
-Then create a configuration file called client.properties in the program folder. 
+![](API_Navigation.png)
 
-#### Sample config file:
+After selecting a API you get the available endpionts to the API. You can try them using the green "Try it" Button
+![](apsadditionalcompetence.png)
 
-```
-issuer=636132b5-1363-440f-a06d-a218c4592c3a
-audience=https://oidc-ver1.difi.no/idporten-oidc-provider/
-token.endpoint=https://oidc-ver1.difi.no/idporten-oidc-provider/token
-scope=sdir:apstest
+When you scroll down the API operation description you see parameter samples and responses you can expect 
 
-keystore.file=sdir_test_keys.jks
-keystore.password=myNotSoSecretPassword 
+### Fetching data
 
-keystore.alias=sdir_test
-keystore.alias.password=myNotSoSecretPassword
-```
+Enter the subscription key, uid and Authorization header neads to be set with the Bearer token. Remember to write 'Bearer' before the long token string.
 
-Then you need to run it using this command using these two commands(requires Maven and JAVA to be installed):
-```
-mvn package
-java -jar target\jwt-grant-generator-1.0-SNAPSHOT-jar-with-dependencies.jar client.properties
-```
+![](tryit.png)
 
-### Token
+### Inserting data
 
-The output from jwt-grant-generator contains the access token retrieved from Maskinporten. This can then be used when acessing the API
+To insert data you need the same header information as a Get but instead you need to fill in the body with a JSON document containing data.
+
+![](postadditionalcompetence.png)
+
+If you receive a 201 Created status code back fro mthe API the request is successfull and a row in the database is created.
+
+### White/Gray hat Hackers
+If you find any issues or security vulnerabilities in the apis, we would be deeply thankfull if you report it to [this email address](@sdir.no)
