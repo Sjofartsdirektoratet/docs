@@ -16,7 +16,7 @@ Two types of codes are accepted in the field *code* in the payload for data tran
 
 As an educational institution or a course center, you can only report courses and educations that you are approved by NMA to deliever. 
 
-**Table 2 - Course codes**
+**Table 2 - Course codes**  
 
 | Kursnavn                                                                                                                                                                          | Kurskode |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
