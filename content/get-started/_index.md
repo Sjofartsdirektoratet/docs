@@ -11,7 +11,7 @@ aliases:
 In order to consume Sdir public services a Maskinporten-integration need to be established. For more information regarding how to configure and use Maskinporten-integration, please see [Maskinporten - API-konsument](https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html)
 
 ### Short Story
-1. Create a Keystore containing the SDIR Enterprise Certificate
+1. Create a Keystore containing your organisation's Enterprise Certificate
 2. Run jwt-grant-generator targeting Maskinporten
 3. You will then receive a Bearer Token to access our services
 
@@ -20,7 +20,7 @@ To create a keystore you first need a Enterprise Certificate. The Enterprise Cer
 
 Once you have a valid Enterprise Certificate you need to add it to a Keystore file for Java to be able to use it. We use [Keystore Explorer](https://keystore-explorer.org/)
 
-1. From Windows Explorer open the Certificate in Keystore explorer and unlock it using the Sdir password.
+1. From Windows Explorer open the Certificate in Keystore explorer and unlock it using the provided password if prompted.
 2. Save the keystore to a suitable location, preferably in the same folder as jwt-grant-generator, name is something suitable, for expample "sdir_test_keys.jks"
 
 ### Run Jwt-grant-generator
