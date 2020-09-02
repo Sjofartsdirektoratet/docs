@@ -10,9 +10,11 @@ weight: 2
 The latest version of this API can be found deployed in our test environment at: https://sdir-d-apim-common.portal.azure-api.net/docs/services/sdir-d-api-aps-course.
 {{% /panel %}}
 
-Two types of codes are accepted in the field *code* in the payload for data transfer; educational code and course code. The educational codes are referring to an education completed in an educational institution, while as the course codes are referring to shorter courses. A list of both the educational- and course codes can be obtained by using the operations in the APIs. 
+## Educational and course codes 
 
-The reported courses and educations will be validated against the organization delievering the data. 
+Two types of codes are accepted in the field *code* in the payload for data transfer; educational code and course code. The educational codes are referring to an education completed in an educational institution listed in **table 3**, while as the course codes are referring to shorter courses listed in **table 2**. A list of both the educational- and course codes can be obtained by using the operation "Fetch a list over valid education codes" in the APIs, this list will contain the latest update. 
+
+As an educational institution or a course center, you can only report courses and educations that you are approved by NMA to deliever. 
 
 **Table 2 - Course codes**
 
