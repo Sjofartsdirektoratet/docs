@@ -116,7 +116,7 @@ As an educational institution or a course center, you can only report courses an
 |     Fagbrev matros                                                             |     FMA         |
 |     Fagbrev skipselektriker offiser                                            |     FSEO        |
 
-## Available functionality  
+## Available functionality   
 **Get a list of existing course registrations** 
 
 GET operation to obtain a list of already reported education and courses using the *uid* received in an earlier response. 
