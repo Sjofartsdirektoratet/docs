@@ -90,7 +90,9 @@ As an educational institution or a course center, you can only report courses an
 | Kurs i vedlikehold av yrkeskompetanse for skipselektrikeroffiser - (Ikke aktivt 02.09.20)                                                                                         | VYE      |
 
 
+
 **Table 3 - Educational codes**
+
 
 | Utdanningskoder                                                                | Kode            |
 |--------------------------------------------------------------------------------|-----------------|
