@@ -10,10 +10,13 @@ weight: 4
 The latest version of this API can be found deployed in our test environment at: https://sdir-d-apim-common.portal.azure-api.net/docs/services/sdir-d-api-aps-seagoing.
 {{% /panel %}}
 
-## STYRK codes
-The positions available for reporting with the respective STYRK codes are listed in norwegian in **Table 1**. This list can also be obtained with XXX API command.
+## Occupation codes
+The Norwegian Maritime Authorithy has decided a set of acceptable occupations when reporting seagoing service time. These occupations are the same as used in the "A-melding", namely the *STYRK codes*. The acceptable STYRK codes are listed in **Table 1**. 
 
-**Table 1**
+All codes can also be obtained using the API operation *Get Sdir reference list og Occupation codes*, this list will always be updated. If the seafarer has worked in an occupation not listed in Table 1, a list of corresponding occupations can be found by using the API operation *Get Sdir total overview over occupation codes*. For example the occupation "Platform chief" can be reported as "skipsfører".  
+
+
+**Table 1 - List of acceptable occupation codes (Updated 03.09.20)**
 
 | Category   | STYRK title                | STYRK code |
 |------------|----------------------------|------------|
@@ -52,6 +55,9 @@ POST operation to add more than one seagoing service report on one or several se
 
 GET operation to obtain a seagoing service report by the *uid* obtained in the respone from a previously delivered report.
 
+**Get service reports by array of uid**
+GET operation to obtain several service reports using the uid. 
+
 **Update service report**
 
 PUT operation to update a seagoing service reports. The *uid* is obtained in the respone of a previously delivered report, and is mandatory.
@@ -59,6 +65,12 @@ PUT operation to update a seagoing service reports. The *uid* is obtained in the
 **Update list of service reports** 
 
 PUT operation to update a list of seagoing service reports. The *uid* is obtained in the respone of a previously delivered report, and is mandatory.
+
+**Get Sdir reference list of Occupation codes**
+GET operation to obtain a list of the acceptable occupations codes. This list will always be updated with the correct set of codes. 
+
+**Get Sdir total overview over occupation codes**
+GET operation to obtain an overview of occupation codes in the maritime sector related to the set of acceptable codes defined in Table 1. 
 
 
 
