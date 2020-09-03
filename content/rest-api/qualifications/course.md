@@ -12,7 +12,7 @@ The latest version of this API can be found deployed in our test environment at:
 
 ## Educational and course codes 
 
-Two types of codes are accepted in the field *code* in the payload for data transfer; educational code and course code. The educational codes are referring to an education completed in an educational institution listed in **table 3**, while as the course codes are referring to shorter courses listed in **table 2**. A list of both the educational- and course codes can be obtained by using the operation "Fetch a list over valid education codes" in the APIs, this list will contain the latest update. 
+Two types of codes are accepted in the field *code* in the payload for data transfer; educational code and course code. The educational codes are referring to an education completed in an educational institution listed in **table 3**, while as the course codes are referring to shorter courses listed in **table 2**. A list of both the educational- and course codes can be obtained by using the API operation *Fetch a list over valid education codes*, this list will always be updated with newest version. 
 
 As an educational institution or a course center, you can only report courses and educations that you are approved by NMA to deliever. 
 
@@ -118,29 +118,23 @@ As an educational institution or a course center, you can only report courses an
 |     Fagbrev matros                                                             |     FMA         |
 |     Fagbrev skipselektriker offiser                                            |     FSEO        |
 
-## Available functionality   
-**Get a list of existing course registrations** 
-
-GET operation to obtain a list of already reported education and courses using the *uid* received in an earlier response. 
-
-**Get a list of seafareses who have completed a course**
-
-GET operation to obtain a list of seafarers that have completed a course at the organization you are representing. 
-
-**Get an existing course registration from the register**
-
-GET operation to obtain an earlier report using the *uid*.
+## Available functionality  
 
 **Register a new course**
 
-POST operation to register a new course or education. 
+POST operation to register a new course or education. The course and educational codes in Table 2 and 3 must be used. 
 
-**Update an existing course registration property**
+**Fetch a list over valid education codes**
 
-PATCH operation to updata an already registered course using the *uid* receieved in the response from an earlier report.    
+GET operation to obtain the complete list of bot course and education codes listed in table 2 and 3. This list will always contain the newest version. 
 
-**Updae an existing course registration**
+**Get an existing course registrations** 
 
-PUT operation to update "completedAt"  in an exisiting course registration using the *uid* receieved in the response from an earlier report.  
-  
+GET operation to obtain an already reported education or course using the *uid* received in the response when reported. 
+
+**Have a seafarer passed a course given by course code**
+GET operation to check if a seafarer has passed a course. There will only be a valid response if the course is reported by the authorized organization. The operation does not give a confirmation on courses completed in other educational institutions. 
+
+
+
 
