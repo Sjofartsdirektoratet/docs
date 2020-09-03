@@ -10,10 +10,10 @@ weight: 3
 The latest version of this API can be found deployed in our test environment at: https://sdir-d-apim-common.portal.azure-api.net/docs/services/sdir-d-api-aps-additionalcompetence.  
 {{% /panel %}}
 
-## Meta data
-The Norwegian Maritime Authority will accept the additional competence listed in Table 1. 
+## List of additional competence 
+The Norwegian Maritime Authority will accept the additional competence listed in Table 4. When using the API operations the *code field* should contain one of the codes listed in the table.  
 
-**Table 1**
+**Table 4 (Updated 03.09.20) **
 
 | Code     | Description of Additional Competence                                                                                |
 |----------|---------------------------------------------------------------------------------------------------------------------|
@@ -31,30 +31,30 @@ The Norwegian Maritime Authority will accept the additional competence listed in
 
 ## Available functionality 
 
-**Add additional competance report** 
+**Adds an additional competence** 
 
-POST operation to register additional competance. 
+POST operation to register additional competence. 
 
-**Add list of additional competance reports** 
+**Adds list of additional competence** 
 
-POST operation to register additional competance on more than one seafarer, or several additional competances. 
+POST operation to register additional competence on more than one seafarer, or several additional competences. 
 
-**Get additional competance using user ID**
+**Get additional competence by uid**
 
 GET operation to access previous delieverd additional competance using the UID. 
 
 
-**Get additional competances using user ID**
+**Get additional competences using uid**
 
-GET operation to access more than one previous delieverd additional competance using UIDs. 
+GET operation to access more than one previous delieverd additional competence using UIDs. 
 
-**Updae an additional competance**
+**Updae an additional competence**
 
 PUT operation to update an already reported additional competance using the UID. 
 
-**Update list of additional competance**
+**Update list of additional competence**
 
-PUT operation to update a list of already reported additional competances using the UID. 
+PUT operation to update a list of already reported additional competences using the UID. 
 
 
 
