@@ -56,6 +56,7 @@ POST operation to add more than one seagoing service report on one or several se
 GET operation to obtain a seagoing service report by the *uid* obtained in the respone from a previously delivered report.
 
 **Get service reports by array of uid**
+
 GET operation to obtain several service reports using the uid. 
 
 **Update service report**
