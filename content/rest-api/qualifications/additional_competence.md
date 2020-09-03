@@ -48,7 +48,7 @@ GET operation to access previous delieverd additional competance using the UID.
 
 GET operation to access more than one previous delieverd additional competence using UIDs. 
 
-**Updae an additional competence**
+**Update an additional competence**
 
 PUT operation to update an already reported additional competance using the UID. 
 
