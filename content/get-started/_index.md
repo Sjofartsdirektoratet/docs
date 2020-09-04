@@ -14,7 +14,7 @@ To use the apis you login to the [development portal](https://sdir-d-apim-common
 
 ### Getting token
 
-To access the api and data within you need a valid Bearer token, obtaining this is covered in [this guide](token.md). Once you have a valid Bearer Token you can access data relevant to your organisation.
+To access the api and data within you need a valid Bearer token, obtaining this is covered in [this guide](token). Once you have a valid Bearer Token you can access data relevant to your organisation.
 
 ### Navigating APIs
 
