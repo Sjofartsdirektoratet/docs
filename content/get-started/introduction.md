@@ -1,9 +1,7 @@
 ---
 title: Introduction
-description: Basic introduction to Apis and their usage 
+description: Basic introduction to Apis and their usage
 weight: 5
-aliases:
-- /getting-started/
 ---
 
 ## Introduction to Web APIs

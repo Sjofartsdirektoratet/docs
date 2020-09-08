@@ -1,9 +1,7 @@
 ---
-title: Token
+title: Access Token
 description: To be able to use public services you need to ble able to authenticate and have the necessary permissions. 
-weight: 5
-aliases:
-- /getting-started/
+weight: 15
 ---
 
 ## Maskinporten integration 
@@ -67,5 +65,5 @@ java -jar target\jwt-grant-generator-1.0-SNAPSHOT-jar-with-dependencies.jar clie
 ### Token
 
 The output from jwt-grant-generator contains the access token. This can then be used when acessing the API.
-![](jwtgrantgenrun.png)
+![](../images/jwtgrantgenrun.png)
 
