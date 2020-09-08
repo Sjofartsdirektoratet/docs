@@ -8,38 +8,17 @@ aliases:
 
 ## Getting started using the apis
 
-There are many ways you could use for accessing the api. For exampl making your own client or using a tool like [Postman](https://www.postman.com/). This guide will explain it with a built in browser based tool.
+There are many ways you could use for accessing the api. Here is a [introductory guide](introduction.md) covering the basics around web apis
 
-To use the apis you login to the [development portal](https://sdir-d-apim-common.developer.azure-api.net/apis), there you can access the api from a web based frontend.
+### Getting token from Maskinporten
 
-### Getting token
+To access the api and data within you need a valid Bearer token, this token proves who you are and that you have access to our API. 
+Maskinporten is a trusted 3rd party that we use for guaranteeing this. A guide covering the aquisition of tokens and the setup needed to integrate with Maskinporten is [here](token.md). Once you have a valid Token you can access data relevant to your organisation.
 
-To access the api and data within you need a valid Bearer token, obtaining this is covered in [this guide](token). Once you have a valid Bearer Token you can access data relevant to your organisation.
+### Familiarizing yourself with the API
 
-### Navigating APIs
+To familiarize yourself with our API we recomend using the Azure API management web frontend. whe have made a [guide](developmentportal.md) on how to use this.
 
-The first page allows you to navigate the different APIs
+### Developing API CLients
 
-![](API_Navigation.png)
-
-After selecting a API you get the available endpionts to the API. You can try them using the green "Try it" Button
-![](apsadditionalcompetence.png)
-
-When you scroll down the API operation description you see parameter samples and responses you can expect 
-
-### Fetching data
-
-Enter the subscription key, uid and Authorization header neads to be set with the Bearer token. Remember to write 'Bearer' before the long token string.
-
-![](tryit.png)
-
-### Inserting data
-
-To insert data you need the same header information as a Get but instead you need to fill in the body with a JSON document containing data.
-
-![](postadditionalcompetence.png)
-
-If you receive a 201 Created status code back fro mthe API the request is successfull and a row in the database is created.
-
-### White/Gray hat Hackers
-If you find any issues or security vulnerabilities in the apis, we would be deeply thankfull if you report it to [this email address](@sdir.no)
+To consume and integrate with our platform you need to develop a client, this [guide](developclients.md) covers what you need to develop clients and make your software communicating with our sofware.
