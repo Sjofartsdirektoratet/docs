@@ -10,8 +10,8 @@ jumbotron: true
 
 <div class="a-card a-cardImage mt-3 mb-3">
   <div class="a-cardImage-text">
-    <a href="/qualifications/" class="a-linkFeatured ">
-      Qulifications
+    <a href="/info/" class="a-linkFeatured ">
+      Generell informasjon
       <i class="ai ai-sm ai-nw ai-nw-right ai-arrowright"></i>
     </a>
     <p class="pt-1">More infomration about the requirment of reporting qualifications regarding personal certificates.</p>
