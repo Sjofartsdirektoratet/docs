@@ -6,7 +6,17 @@ jumbotron: true
 
 # Development
 
-<p class="a-leadText">This is Sdir developer portal with all the necessary information to get started using Sdirs REST APIs. </p>
+<p class="a-leadText">This is Sdir developer portal with all the necessary information to get started using Sdirs REST APIs. On this page you will find information on how report **qualifications for personal certificates** using machine to machine communication.</p>
+
+<div class="a-card a-cardImage mt-3 mb-3">
+  <div class="a-cardImage-text">
+    <a href="/qualifications/" class="a-linkFeatured ">
+      Qulifications
+      <i class="ai ai-sm ai-nw ai-nw-right ai-arrowright"></i>
+    </a>
+    <p class="pt-1">More infomration about the requirment of reporting qualifications regarding personal certificates.</p>
+  </div>
+</div>
 
 <div class="a-card a-cardImage mt-3 mb-3">
   <div class="a-cardImage-text">
