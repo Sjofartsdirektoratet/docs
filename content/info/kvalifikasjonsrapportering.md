@@ -11,10 +11,10 @@ I løpet av høsten 2020 vil det også lages en *manuell* rapporteringsmulighet 
 
 Kvalifikasjoner som nå kan rapporteres via våre offentlige datagrensesnitt er fartstid, tilleggskompetanse, kurs og utdanning. Videre følger infomrasjon om hver kategori.
 
-##Fartstid 
+## Fartstid 
 
 
-##Tillegskompetanse 
+## Tillegskompetanse 
 
 
-##Utdanning og kurs
+## Utdanning og kurs
