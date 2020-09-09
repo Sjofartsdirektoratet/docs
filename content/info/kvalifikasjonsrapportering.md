@@ -17,4 +17,4 @@ Kvalifikasjoner som nå kan rapporteres via våre offentlige datagrensesnitt er 
 ## Tillegskompetanse 
 
 
-## Utdanning og kurs
+## Utdanning og kurs 
