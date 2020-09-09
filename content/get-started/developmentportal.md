@@ -34,3 +34,8 @@ To insert data you need the same header information as a Get but instead you nee
 ![](../images/postadditionalcompetence.png)
 
 If you receive a 201 Created status code back from the API the request is successfull and a row in the database is created.
+
+Otherwise Inspect the return message for details on what went wrong. Usually its validation errors or some field that is missing
+
+### SqlServer sleeping
+Sqlserver in Azure tend to sleep when not in use. this results in an SQLClient related error message first time you call the api. This will only happen in the Test envirnment as we are running on a lower pricing Tier than Production.
