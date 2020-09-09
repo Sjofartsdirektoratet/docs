@@ -1,6 +1,6 @@
 ---
 title: Kvalifikasjonsrapportering
-description: Rapportering av kvalifikasjoner er relatert til utstedelse av personlige sertifikat  i Sjøfartsdirektoratet. 
+description: Rapportering av kvalifikasjoner er relatert til utstedelse av personlige sertifikat  i Sjøfartsdirektoratet, se her for mer utdypende informasjon om kvalifikasjonsrapportering. 
 toc: true
 weight: 10
 ---
