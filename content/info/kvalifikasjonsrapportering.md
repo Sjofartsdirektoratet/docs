@@ -18,6 +18,3 @@ Kvalifikasjoner som nå kan rapporteres via våre offentlige datagrensesnitt er 
 
 
 ## Utdanning og kurs 
-
-
-##
