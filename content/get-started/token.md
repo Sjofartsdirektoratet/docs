@@ -32,7 +32,7 @@ Once you have a valid Enterprise Certificate you need to add it to a Keystore fi
 
 Jwt grant generator is a tool for generating a JWT sending it to Maskiporten and returning an access token. This token is used for accessing the api.
 
-First Clone or download [jwt-grant-generator](https://github.com/difi/jwt-grant-generator) in a suitable location on your computer. You then put the keystore created in the program folder.
+First Clone or download [jwt-grant-generator](https://github.com/difi/jwt-grant-generator) in a suitable location on your computer. You then put the keystore created in the root folder.
 
 Then create a configuration file called client.properties in the program folder. 
 
@@ -51,7 +51,7 @@ keystore.alias=sdir_test
 keystore.alias.password=myNotSoSecretPassword
 ```
 
-Then you need to run it using this command using these two commands(requires Maven and JAVA to be installed):
+Then you need to run it using this command using these two commands(requires [Maven](https://maven.apache.org/install.html) and [JAVA](https://tutorials.visualstudio.com/Java/hello-world/install-jdk) to be installed):
 
 Run once to build project:
 ```
