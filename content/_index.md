@@ -4,9 +4,23 @@ description: Teknisk dokumentasjon for Altinns produkter
 jumbotron: true
 ---
 
-# Development
+# Utvikling
 
-<p class="a-leadText">This is Sdir developer portal with all the necessary information to get started using Sdirs REST APIs. On this page you will find information on how report qualifications for personal certificates using machine to machine communication.</p>
+<p class="a-leadText">Velkommen til SDIR sin dokumentasjons portal, for nødvendig informasjon relatert til bruk av SDIR sine API. På disse sidene vil du i dag finne informasjon om hvordan innrapportering av kvalifikasjonsdata relatert til personlige sertifikater utføres med bruk av maskin til maskin integrasjon.</p>
+
+### To do
+
+1. Anskaffe virksomhetssertifikat for test og prod
+2. Bli kunde hos Difi -> Tilgang til samarbeidsportalen
+    Ta kontakt med Difi via servicedesk@digdir.no
+3. Bli API-kunde med Sjøfartsdirektoratet
+    Sende en mail til apsinfo@sdir.no
+4. Lage en integrasjon hos Difi og koble denne opp mot Sjøfartsdirektoratet sitt API (scope)
+    Link: https://minside-samarbeid.difi.no/
+5. Lage en applikasjon/system som lager og sender autentiserings-token til Difi
+6. Kalle på Sjøfartsdirektoratet sitt API, samt å legge access_token fra Difi med på forespørselen
+
+![](../images/DifiMPF.png)
 
 <div class="a-card a-cardImage mt-3 mb-3">
   <div class="a-cardImage-text">
@@ -17,6 +31,7 @@ jumbotron: true
     <p class="pt-1">More infomration about the requirment of reporting qualifications regarding personal certificates.</p>
   </div>
 </div>
+
 
 <div class="a-card a-cardImage mt-3 mb-3">
   <div class="a-cardImage-text">
