@@ -134,3 +134,5 @@ GET operation to obtain an already reported education or course using the *uid* 
 
 **Have a seafarer passed a course given by course code**
 GET operation to check if a seafarer has passed a course. There will only be a valid response if the course is reported by the authorized organization. The operation does not give a confirmation on courses completed in other educational institutions. 
+
+**_**
