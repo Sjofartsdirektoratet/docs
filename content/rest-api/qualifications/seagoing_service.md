@@ -73,9 +73,7 @@ GET operation to obtain a list of the acceptable occupations codes. This list wi
 **Get Sdir total overview over occupation codes**
 GET operation to obtain an overview of occupation codes in the maritime sector related to the set of acceptable codes defined in Table 1. 
 
-
-
-
+##
 
 
 
