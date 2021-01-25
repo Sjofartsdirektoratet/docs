@@ -8,7 +8,7 @@ weight: 10
 
 The Azure development portal contains detailed specification of the availible Sdir APIs. The portal provides a high technical detail and is mostly targeted for application developers that want to integrate with Sdir programatically.      
 
-To use the apis, login to the [development portal](https://sdir-d-apim-common.developer.azure-api.net/apis), to access the api from a web based frontend.
+To use the apis, login to the [development portal](https://sdir-t-apim-common.developer.azure-api.net/apis), to access the api from a web based frontend.
 
 ### Navigating APIs
 

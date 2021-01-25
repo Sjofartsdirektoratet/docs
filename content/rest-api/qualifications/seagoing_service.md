@@ -7,7 +7,7 @@ weight: 4
 
 {{% panel %}}
 **Development environment API URL** <br>
-The latest version of this API can be found deployed in our test environment at: https://sdir-d-apim-common.developer.azure-api.net/api-details#api=sdir-d-api-aps-seagoing.
+The latest version of this API can be found deployed in our test environment at: https://sdir-t-apim-common.developer.azure-api.net/api-details#api=sdir-t-api-aps-seagoing.
 {{% /panel %}}
 
 ## Occupation codes
