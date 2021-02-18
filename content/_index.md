@@ -6,7 +6,7 @@ jumbotron: true
 
 # Utvikling
 
-<p>Ny URL til endepunktene: [test portal](https://sdir-t-apim-common.developer.azure-api.net/apis)</p>
+<p>Ny URL til test endepunktene: https://sdir-t-apim-common.developer.azure-api.net/apis</p>
 
 <p class="a-leadText">Velkommen til SDIR sin dokumentasjons portal, for nødvendig informasjon relatert til bruk av SDIR sine API. På disse sidene vil du i dag finne informasjon om hvordan innrapportering av kvalifikasjonsdata relatert til personlige sertifikater utføres med bruk av maskin til maskin integrasjon.</p>
 
