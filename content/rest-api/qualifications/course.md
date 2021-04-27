@@ -7,7 +7,7 @@ weight: 2
 
 {{% panel %}}
 **Development environment API URL** <br>
-The latest version of this API can be found deployed in our test environment at: https://sdir-t-apim-common.developer.azure-api.net/api-details#api=sdir-t-api-aps-course.
+The latest version of this API can be found deployed in our test environment at: https://sdir-t-apim-common.developer.azure-api.net/api-details#api=sdir-t-api-aps-course-external.
 {{% /panel %}}
 
 ## Educational and course codes 
