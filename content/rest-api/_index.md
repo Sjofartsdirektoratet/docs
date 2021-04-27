@@ -28,10 +28,10 @@ When a new version of an API is released, the old version will be availible for 
 If there are only minor nonbreaking changes to an existing API it will keep the version number if basic functionality is not affected. 
 
 **Version 1:** <br>
-https:<span></span>//sdir-t-apim-common.azure-api.net/aps-additionalcompetence/additionalcompetence/**v1**/additionalcompetence/{id}
+https:<span></span>//sdir-t-apim-common.azure-api.net/aps-additionalcompetence/**v1**/additionalcompetence/{id}
 
 **Version 2:** <br> 
-https:<span></span>//sdir-t-apim-common.azure-api.net/aps-additionalcompetence/additionalcompetence/**v2**/additionalcompetence/{id}
+https:<span></span>//sdir-t-apim-common.azure-api.net/aps-additionalcompetence/**v2**/additionalcompetence/{id}
 
 ## Batch operations
 
