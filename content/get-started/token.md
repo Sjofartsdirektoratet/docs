@@ -43,11 +43,12 @@ Then create a configuration file called client.properties in the program folder 
 #### Sample configuration file:
 
 ```
-// your maskinporten client id
+// your maskinporten integration id
 issuer=636132b5-1363-440f-a06d-a218c4592c3a
 
-audience=https://oidc-ver1.difi.no/idporten-oidc-provider/
-token.endpoint=https://oidc-ver1.difi.no/idporten-oidc-provider/token
+// this is the values for the test enviroment
+audience=https://ver1.maskinporten.no/
+token.endpoint=https://ver1.maskinporten.no//token
 scope=sdir:apstest
 
 keystore.file=sdir_test_keys.jks
