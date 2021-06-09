@@ -4,11 +4,9 @@ description: Teknisk dokumentasjon for Altinns produkter
 jumbotron: true
 ---
 
-# Utvikling
+# Sdir API
 
-Ny URL til test endepunktene: <a href="https://sdir-t-apim-common.developer.azure-api.net/apis/" class="a-linkFeatured">https://sdir-t-apim-common.developer.azure-api.net/apis/</a>
-
-<p class="a-leadText">Velkommen til SDIR sin dokumentasjons portal, for nødvendig informasjon relatert til bruk av SDIR sine API. På disse sidene vil du i dag finne informasjon om hvordan innrapportering av kvalifikasjonsdata relatert til personlige sertifikater utføres med bruk av maskin til maskin integrasjon.</p>
+<p class="a-leadText">The main purpose of this website is to provide a developer with information on how to connect and use the Norwegian Maritime Directorate's (Sdir) API. Using our apis, you can retrieve available information, as well as report information directly from external systems. </p>
 
 ### To do
 
