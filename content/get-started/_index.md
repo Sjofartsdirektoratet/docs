@@ -15,7 +15,7 @@ Contact Norwegian Digitalisation Agency, servicedesk@digdir.no, to get access to
 Send a email to apsinfo@sdir.no and request access to the Sdir API test scope.
 
 ## Step four: Create intergrations
-Create intergrations for test in the [Samarbeidsportalen](https://minside-samarbeid.difi.no/) to the Sdir API scopes. We use ver 1 for the test enviroment.
+Create Maskinport intergration for test in the [Samarbeidsportalen](https://minside-samarbeid.difi.no/) to the Sdir API scopes. We use ver 1 for the test enviroment.
 
 ## Step five: Create a subscription
 Developers who need to consume the published APIs must include a valid subscription key in HTTP requests when they make calls to those APIs.
