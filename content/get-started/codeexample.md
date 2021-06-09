@@ -1,5 +1,5 @@
 ---
-title: Access Token ex
+title: Access Token (ASP.NET Core)
 description: To be able to use Sdir public APIs you need to ble able to authenticate and have the necessary permissions. 
 weight: 20
 ---
