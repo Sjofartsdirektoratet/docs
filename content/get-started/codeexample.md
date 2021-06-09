@@ -10,9 +10,9 @@ weight: 20
 #### Maskinporten settings:
 
 ```
-ClientId=[your maskinporten integration client id]
-MaskinportenBaseAddress test=https://oidc-ver1.difi.no/idporten-oidc-provider/
-MaskinportenBaseAddress prod=https://oidc.difi.no/idporten-oidc-provider/
+ClientId=[your maskinporten integration id]
+MaskinportenBaseAddress test=https://ver1.maskinporten.no/
+MaskinportenBaseAddress prod=https://maskinporten.no/
 Scope test=sdir:apstest
 Scope prod=sdir:sdir2022
 
