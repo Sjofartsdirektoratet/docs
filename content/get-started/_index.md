@@ -7,7 +7,7 @@ weight: 5
 ## Step one: Enterprise Certificate
 Your company must authenticate  against Maskinporten with a Enterprise Certificate. The Enterprise Certificate can be ordered from [Commfides](https://www.commfides.com/commfides-virksomhetssertifikat/) or [Buypass](https://www.buypass.no/produkter/virksomhetssertifikat-esegl). You will need a test and a production certificate. 
 
-## Step two: Get acccess to Samarbeidsportalen
+## Step two: Apply for access to Samarbeidsportalen
 Sdir uses Maskinporten for access control. The solution guarantees identity between companies, and ensures machine-to-machine authentication.
 Contact Norwegian Digitalisation Agency, servicedesk@digdir.no, to get access to Samarbeidsportalen and Maskinporten.
 
