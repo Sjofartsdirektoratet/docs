@@ -115,18 +115,14 @@ As an educational institution or a course center, you can only report courses an
 
 ## Available functionality  
 
-**List valid course and education codes**
-
+### List valid course and education codes
 GET operation to obtain the complete list of bot course and education codes listed in table 2 and 3. This list will always contain the newest version. 
 
-**Create passed course participants**
-
+### Create passed course participants
 POST operation to register a new course or education participants. The course and educational codes in Table 2 and 3 must be used. 
 
-
-**List passed course participants** 
-
+### List passed course participants
 GET operation to obtain an already reported education or course participants. 
 
-**Retrieve a passed course participant**
+### Retrieve a passed course participant
 GET operation to obtain acourse participants. 
