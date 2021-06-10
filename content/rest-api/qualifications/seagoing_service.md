@@ -5,18 +5,14 @@ toc: true
 weight: 4
 ---
 
-{{% panel %}}
-**Development environment API URL** <br>
-The latest version of this API can be found deployed in our test environment at: https://sdir-t-apim-common.developer.azure-api.net/api-details#api=sdir-t-api-aps-seagoing.
-{{% /panel %}}
 
 ## Occupation codes
 The Norwegian Maritime Authorithy has decided a set of acceptable occupations when reporting seagoing service time. These occupations are the same as used in the "A-melding", namely the *STYRK codes*. The acceptable STYRK codes are listed in **Table 1**. 
 
-All codes can also be obtained using the API operation *Get Sdir reference list og Occupation codes*, this list will always be updated. If the seafarer has worked in an occupation not listed in Table 1, a list of corresponding occupations can be found by using the API operation *Get Sdir total overview over occupation codes*. For example the occupation "Platform chief" can be reported as "skipsfører".  
+All codes can also be obtained using the API operation *List reference occupation codes*, this list will always be updated. If the seafarer has worked in an occupation not listed in Table 1, a list of corresponding occupations can be found by using the API operation *List reference occupation code mappings*. For example the occupation "Platform chief" can be reported as "skipsfører".  
 
 
-**Table 1 - List of acceptable occupation codes (Updated 03.09.20)**
+**Table 1 - List of acceptable occupation codes**
 
 | Category   | STYRK title                | STYRK code |
 |------------|----------------------------|------------|
@@ -43,37 +39,26 @@ All codes can also be obtained using the API operation *Get Sdir reference list 
 
 ## Available functionality 
 
-**Add a service report**
+### Create multiple seagoing services
 
 POST operation to add a new seagoing service report on one seafarer. 
 
-**Add list of service report**
 
-POST operation to add more than one seagoing service report on one or several seafarers. 
+### Retrieve seagoing service
 
-**Get service report by uid**
+GET operation to obtain a seagoing service  by the *uid*.
 
-GET operation to obtain a seagoing service report by the *uid* obtained in the respone from a previously delivered report.
+### List seagoing services
 
-**Get service reports by array of uid**
+GET operation to obtain seagoing services. 
 
-GET operation to obtain several service reports using the uid. 
 
-**Update service report**
-
-PUT operation to update a seagoing service reports. The *uid* is obtained in the respone of a previously delivered report, and is mandatory.
-
-**Update list of service reports** 
-
-PUT operation to update a list of seagoing service reports. The *uid* is obtained in the respone of a previously delivered report, and is mandatory.
-
-**Get Sdir reference list of Occupation codes**
+### List reference occupation codes
 GET operation to obtain a list of the acceptable occupations codes. This list will always be updated with the correct set of codes. 
 
-**Get Sdir total overview over occupation codes**
+### List reference occupation code mappings
 GET operation to obtain an overview of occupation codes in the maritime sector related to the set of acceptable codes defined in Table 1. 
 
-##
 
 
 
