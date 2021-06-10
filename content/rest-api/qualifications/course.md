@@ -5,14 +5,9 @@ toc: true
 weight: 2
 ---
 
-{{% panel %}}
-**Development environment API URL** <br>
-The latest version of this API can be found deployed in our test environment at: https://sdir-t-apim-common.developer.azure-api.net/api-details#api=sdir-t-api-aps-course-external.
-{{% /panel %}}
-
 ## Educational and course codes 
 
-Two types of codes are accepted in the field *code* in the payload for data transfer; educational code and course code. The educational codes are referring to an education completed in an educational institution listed in **table 3**, while as the course codes are referring to shorter courses listed in **table 2**. A list of both the educational- and course codes can be obtained by using the API operation *Fetch a list over valid education codes*, this list will always be updated with newest version. 
+Two types of codes are accepted in the field *code* in the payload for data transfer; educational code and course code. The educational codes are referring to an education completed in an educational institution listed in **table 3**, while as the course codes are referring to shorter courses listed in **table 2**. A list of both the educational- and course codes can be obtained by using the API operation *List over valid codes*, this list will always be updated with newest version. 
 
 As an educational institution or a course center, you can only report courses and educations that you are approved by NMA to deliever. 
 
@@ -120,17 +115,18 @@ As an educational institution or a course center, you can only report courses an
 
 ## Available functionality  
 
-**Register a new course**
-
-POST operation to register a new course or education. The course and educational codes in Table 2 and 3 must be used. 
-
-**Fetch a list over valid education codes**
+**List valid course and education codes**
 
 GET operation to obtain the complete list of bot course and education codes listed in table 2 and 3. This list will always contain the newest version. 
 
-**Get an existing course registrations** 
+**Create passed course participants**
 
-GET operation to obtain an already reported education or course using the *uid* received in the response when reported. 
+POST operation to register a new course or education participants. The course and educational codes in Table 2 and 3 must be used. 
 
-**Have a seafarer passed a course given by course code**
-GET operation to check if a seafarer has passed a course. There will only be a valid response if the course is reported by the authorized organization. The operation does not give a confirmation on courses completed in other educational institutions. 
+
+**List passed course participants** 
+
+GET operation to obtain an already reported education or course participants. 
+
+**Retrieve a passed course participant**
+GET operation to obtain acourse participants. 
