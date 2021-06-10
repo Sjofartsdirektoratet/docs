@@ -18,3 +18,11 @@ Take a note of the subscripton key, which is needed in the HTTP requests.
 **Base API URL production environment** <br><br>
 https://sdir-p-apim-common.developer.azure-api.net
 {{% /panel %}}
+<br><br>
+
+{{% panel %}}
+**Settings** <br><br>
+_ClientId_=[your production integration id]<br>
+_MaskinportenBaseAddress_=https://maskinporten.no/<br>
+_Scope_=sdir:sdir2022
+{{% /panel %}}
