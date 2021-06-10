@@ -1,6 +1,6 @@
 ---
 title: Development Portal
-description: Teknisk dokumentasjon for Altinns produkter
+description:  Norwegian Maritime Directorate's (Sdir) API
 jumbotron: true
 ---
 
