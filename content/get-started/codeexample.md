@@ -6,17 +6,21 @@ weight: 20
 
 ## Maskinporten integration 
 
+In this example you can use the certificate in the .p12-keystore format.
+
+
 
 #### Maskinporten settings:
 
-```
-ClientId=[your maskinporten integration id]
-MaskinportenBaseAddress test=https://ver1.maskinporten.no/
-MaskinportenBaseAddress prod=https://maskinporten.no/
-Scope test=sdir:apstest
-Scope prod=sdir:sdir2022
+{{% panel %}}
+**Settings** <br><br>
+_ClientId_=[your test integration id]<br>
+_MaskinportenBaseAddress_=https://ver1.maskinporten.no/<br>
+_Scope_=sdir:apstest
+{{% /panel %}}
 
-```
+
+
 
 #### ASP.NET Core example code:
 
