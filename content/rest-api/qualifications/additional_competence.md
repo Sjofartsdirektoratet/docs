@@ -8,7 +8,7 @@ weight: 3
 ## List of additional competence 
 The Norwegian Maritime Authority will accept the additional competence listed in Table 4. When using the API operations the *code field* should contain one of the codes listed in the table. The _List additional competence codes_ API endpoint will contain up to date list of codes.
 
-**Table 4 **
+**Table 4 - Additional Competence Codes**
 
 | Code     | Description of Additional Competence                                                                                |
 |----------|---------------------------------------------------------------------------------------------------------------------|
@@ -26,16 +26,16 @@ The Norwegian Maritime Authority will accept the additional competence listed in
 
 ## Available functionality 
 
-**List additional competence codes**
+### List additional competence codes
 GET operation to obtain the complete list of competence codes listed in table 4. This list will always contain the newest version.
 
-**Create additional competences** 
+### Create additional competences*
 POST operation to register additional competences. 
 
-**Retrive an additional competence**
+### Retrive an additional competence
 GET operation to obtain an already reported additional competence using UIDs. 
 
-**List additional competences**
+### List additional competences
 GET operation to obtain  already reported additional competences. 
 
 
