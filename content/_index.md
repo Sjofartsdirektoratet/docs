@@ -1,6 +1,6 @@
 ---
 title: Development Portal
-description:  Norwegian Maritime Directorate's (Sdir) API
+description:  Norwegian Maritime Directorate (Sdir) API
 jumbotron: true
 ---
 
