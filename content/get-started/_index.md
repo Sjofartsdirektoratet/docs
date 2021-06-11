@@ -25,7 +25,7 @@ You are now ready to start using the Sdir API. You need to add the following to 
 - _Ocp-Apim-Subscription-Key_ with the primary subscription key as value. 
 - _Authorization_ with the value "Bearer " + Access Token.
 
-![](../../images/DifiMPF.png)
+![](../images/authmaskinporten680.png)
 
 {{% panel %}}
 **Base API URL Test environment** <br><br>
