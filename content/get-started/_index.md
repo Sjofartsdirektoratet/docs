@@ -25,6 +25,8 @@ Sign up for the [test enviroment](https://sdir-t-apim-common.developer.azure-api
 A JWT grant is a request sent by the client towards Maskinporten, in order to obtain an Access Token.
 We have a [guide](/get-started/token/) covering the aquisition of the token using the JWT grant generator here. We have also a [ASP.NET Core code sample](/get-started/codeexample/).
 
+![](../../images/DifiMPF.png)
+
 ### Step seven: Make your first request
 You are now ready to start using the Sdir API. You need to add the following to the header of the HTTP requests:
 
