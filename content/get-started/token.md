@@ -44,7 +44,7 @@ Then create a configuration file called client.properties in the program folder 
 
 ```
 // your maskinporten integration id
-issuer=636132b5-1363-440f-a06d-a218c4592c3a
+issuer=myIntegrationId
 
 // this is the values for the test enviroment
 audience=https://ver1.maskinporten.no/
