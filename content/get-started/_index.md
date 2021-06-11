@@ -27,6 +27,8 @@ You are now ready to start using the Sdir API. You need to add the following to 
 
 ![](../images/authmaskinporten680.png)
 
+<img src="images/authmaskinporten680.png" alt="Authentication Flow">
+
 {{% panel %}}
 **Base API URL Test environment** <br><br>
 https://sdir-t-apim-common.developer.azure-api.net
