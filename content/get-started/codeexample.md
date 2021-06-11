@@ -14,9 +14,9 @@ In this example you can use the certificate in the .p12-keystore format.
 
 {{% panel %}}
 **Settings** <br><br>
-_ClientId_=[your test integration id]<br>
-_MaskinportenBaseAddress_=https://ver1.maskinporten.no/<br>
-_Scope_=sdir:apstest
+**ClientId**: [your test integration id]<br>
+**MaskinportenBaseAddress**: https://ver1.maskinporten.no/<br>
+**Scope**: sdir:apstest
 {{% /panel %}}
 
 
