@@ -1,6 +1,6 @@
 ---
 title: Production enviroment
-description: When you are ready for production,  please us the following steps to get access:
+description: When you are ready for production please us the following steps to get access
 weight: 25
 ---
 
