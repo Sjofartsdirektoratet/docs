@@ -19,5 +19,4 @@ Take a note of the subscripton key, which is needed in the HTTP requests.
 *API url*:https://api.sdir.no<br>
 *ClientId*:[your production integration id]<br>
 *MaskinportenBaseAddress*:https://maskinporten.no/<br>
-*Scope*:sdir:sdir2022
 {{% /panel %}}
