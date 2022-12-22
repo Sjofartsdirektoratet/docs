@@ -47,7 +47,7 @@ Then create a configuration file called client.properties in the program folder 
 issuer=myIntegrationId
 
 // this is the values for the test enviroment
-audience=https://ver1.maskinporten.no/
+audience=https://ver2.maskinporten.no/
 token.endpoint=https://ver1.maskinporten.no//token
 scope=sdir:apstest
 
