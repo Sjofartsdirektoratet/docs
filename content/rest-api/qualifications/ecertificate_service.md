@@ -1,12 +1,19 @@
-# E-Certificate Service
+---
+title: ECertificate Service
+description: The ECertificate Service is used for creating CLB and CLC Certificates for vessels. 
+toc: true
+weight: 5
+---
 
 
-## Certificate Order
+## Certificate Order 
+
 `POST` /api/order
+
 Authorization required
 
+### Request Body
 
-### Body
 ```json
 {
   "CertificateId": "0000000-CLB-YY-0001234", // Required when OperationType is set to Cancel. Remove field if OperationType is set to Create
@@ -66,10 +73,10 @@ Authorization required
 ```
 
 
-### A - Utstedelse av sertifikat f.eks. til hovedforfall
+### A - Certificate issuance for main expiration
 1. Submit the order
 2. Receive Approval OK or error message ([Read more about Error Messages](#error-messages)).
-3. [See General Info](#general-info):
+3. [See General Info](#general-info)
 
 
 ### B - Certificate issuance for vessel name change or change of ownership
@@ -124,13 +131,14 @@ Authorization required
 
 ## Certificate Status
 `POST` /api/status
+
 Authorization required
 
 
-### Body
+### Request Body 
 ```json
 {
-  "orderId": "00000000-0000-0000-0000-000000000000",
+  "orderId": "00000000-0000-0000-0000-000000000000", // OrderId from /api/order
 }
 ```
 
@@ -198,7 +206,7 @@ Authorization required
 ```
 
 
-#### Error Example 3 - Multiple fails
+#### Error Example 3 - Multiple steps fails
 ```json
 {
     "status": "Error",
