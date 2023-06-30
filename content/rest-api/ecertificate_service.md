@@ -1,6 +1,6 @@
 ---
-title: ECertificate Service
-description: The ECertificate Service is used for creating CLB and CLC Certificates for vessels. 
+title: ECertificate-Insurance
+description: The ECertificate-Insurance service is used for creating CLB and CLC certificates for vessels.
 toc: true
 weight: 5
 ---
@@ -17,9 +17,9 @@ Authorization required
 ```json
 {
   "CertificateId": "0000000-CLB-YY-0001234", // Required when OperationType is set to Cancel. Remove field if OperationType is set to Create
-  "Initiator": "", // Required. e.g. "GARD", "SKULD"
-  "CertificateType": "CLB", // ["CLB", "CLC"]
-  "OperationType": "Create", // ["Create", "Cancel"]. Defaults to Create
+  "Initiator": "", // Required. e.g. GARD, SKULD
+  "CertificateType": "CLB", // CLB, CLC
+  "OperationType": "Create", // Create, Cancel. Defaults to Create
   "ValidFrom": { 
     "Date": "2023-04-20T00:00:00+00:00" // Certificate valid from date
   },
@@ -27,7 +27,7 @@ Authorization required
     "Date": "2024-04-19T23:59:00+00:00" // Certificate valid to date
   },
   "TrialRun": false, // Not required. Defaults to false
-  "AwaitingVesselChanges": false, //Not required. Defaults to false. Used on vessels that are not completly ready yet
+  "AwaitingVesselChanges": false, // Not required. Defaults to false. Used when new changes on vessel has not yet been registered in Skipsregistrene
   "Vessel": { // Vessel data must match the registered data in Skipsregistrene
     "Name": "Color Magic", // Vessel Name
     "CallSign": "CM12", // Vessel Callsign
@@ -42,7 +42,7 @@ Authorization required
           "Name": "Color Line Cruises AS", // Name of owner
           "Address": { // The address must match one of the registered address of to the owner in Skipsregistrene
             "StreetAddress": "Veien 1",
-            "PostalCode": "1234", // Postnummer, for some addresses the postcode and postal address are not used, so these are not required
+            "PostalCode": "1234", // Postal Code, for some addresses the postal code and postal area are not used, so these are not required
             "City": "Oslo",
             "Country": "Norway"
           }
@@ -50,8 +50,8 @@ Authorization required
       ]
     }
   },
-  "INSURER": {
-    "NAME": "GARD", // Name of the insurance company
+  "INSURER": { // Required information about the insurance company
+    "NAME": "", // Name of the insurance company. e.g. GARD, SKULD
     "ADDRESS": "Veien 1, 1234 Oslo, Norway" // The address of the insurance company where the certificate is issued
   },
   "NotificationEmailAddresses": [ // List of emails who will receive the issued certificate
