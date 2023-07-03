@@ -12,7 +12,7 @@ Contact Norwegian Digitalisation Agency, servicedesk@digdir.no, to get access to
 3. **Apply for access to the Sdir API scopes**<br>
 Send a email to apsinfo@sdir.no and request access to the Sdir API test scope.
 4. **Maskinport intergration**<br>
-Create Maskinport intergration for test in the [Samarbeidsportalen](https://minside-samarbeid.difi.no/) to the Sdir API scopes. We use _ver2_ for the test enviroment.
+Create Maskinport intergration for test in the [Samarbeidsportalen](https://samarbeid.digdir.no/) to the Sdir API scopes. We use _ver2_ for the test enviroment.
 5. **API subscription**<br>
 Developers who need to consume the published APIs must include a valid subscription key in HTTP requests when they make calls to those APIs.
 Sign up for the [test enviroment](https://sdir-t-apim-common.developer.azure-api.net/apis) and the select the product (API endpoints) you what to subscribe for. Take a note of the subscripton key, which is needed in the HTTP requests.
