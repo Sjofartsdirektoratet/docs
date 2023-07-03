@@ -8,7 +8,7 @@ weight: 15
 
 To access our api and data within you need a valid Bearer token, this token proves who you are and contains information about you. 
 
-In order to consume Sdir public services a Maskinporten-integration need to be established. For more information regarding how to configure and use Maskinporten-integration, please see [Maskinporten - API-konsument](https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html)
+In order to consume Sdir public services a Maskinporten-integration need to be established. For more information regarding how to configure and use Maskinporten-integration, please see [Maskinporten - API-konsument](https://docs.digdir.no/docs/Maskinporten/maskinporten_guide_apikonsument)
 
 ### Short Story
 this is a short story and is directed towards people familiar with the concepts in this quide and as a to-do list for those who have done this before. More details will follow
@@ -81,6 +81,6 @@ In most scenarios it is not practical to use a tool to generate the authorizatio
 
 [JWT Grant Generator](https://github.com/difi/jwt-grant-generator) shows how to read certificate from keystore and implement the authorization flow in Java
 
-[Maskinporten Consumer Guide](https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html) explains the technical details of consuming an API protected by Maskinporten
+[Maskinporten Consumer Guide](https://docs.digdir.no/docs/Maskinporten/maskinporten_guide_apikonsument) explains the technical details of consuming an API protected by Maskinporten
 
 When developing a custom solution it can be beneficial to use the Jwt-grant-generator guide to verify that the certificates and settings are working correctly.
