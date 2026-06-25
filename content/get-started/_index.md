@@ -10,7 +10,7 @@ Your company must authenticate  against Maskinporten with a Enterprise Certifica
 Sdir uses Maskinporten for access control. The solution guarantees identity between companies, and ensures machine-to-machine authentication.
 Contact Norwegian Digitalisation Agency, servicedesk@digdir.no, to get access to Samarbeidsportalen and Maskinporten.
 3. **Apply for access to the Sdir API scopes**<br>
-Send a email to apsinfo@sdir.no and request access to the Sdir API test scope.
+Send a email to post@sdir.no and request access to the Sdir API test scope.
 4. **Maskinport intergration**<br>
 Create Maskinport intergration for test in the [Samarbeidsportalen](https://minside-samarbeid.difi.no/) to the Sdir API scopes. We use _ver2_ for the test enviroment.
 5. **API subscription**<br>
