@@ -1,6 +1,6 @@
 ---
 title: Getting started
-description: The getting started section covers basic information about where you can find information about the availible Sdir APIs and how to get an access token to be able to call an API. 
+description: The getting started section covers basic information about where you can find information about the availible Sdir APIs and how to get an access token to be able to call an API.. 
 weight: 5
 ---
 
