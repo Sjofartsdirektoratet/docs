@@ -30,8 +30,9 @@ SUB="${APIM_SUBSCRIPTION_ID:-$(az account show --query id -o tsv)}"
 RG="${APIM_RESOURCE_GROUP:-}"
 SVC="${APIM_SERVICE_NAME:-}"
 if [ -z "$RG" ] || [ -z "$SVC" ]; then
-  # There is exactly one "*-apim-common" instance per subscription.
-  read -r RG SVC < <(az apim list --subscription "$SUB" \
+  # There is exactly one "*-apim-common" instance per subscription. tsv prints
+  # resourceGroup and name on separate lines, so read them one line at a time.
+  { read -r RG; read -r SVC; } < <(az apim list --subscription "$SUB" \
     --query "[?contains(name,'apim-common')] | [0].[resourceGroup,name]" -o tsv)
 fi
 : "${RG:?could not determine APIM resource group}"
