@@ -1,4 +1,9 @@
 public
+
+# Generated at build time by scripts/generate-api-reference.sh
+content/api-reference/
+static/api-specs/
+
 *.exe
 *.doc
 *.docx

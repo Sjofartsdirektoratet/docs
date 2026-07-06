@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>API reference</title>
+  <!--
+    Standalone Redoc host, embedded via an <iframe> by the {{< redoc >}} shortcode.
+    Rendering here (instead of inline on the docs page) isolates Redoc from the
+    site theme's global CSS, which otherwise leaks into Redoc's light-DOM output.
+    The spec URL is passed as ?spec=/api-specs/<name>.json
+  -->
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; }
+    #redoc { height: 100%; }
+    #msg { font-family: sans-serif; color: #666; padding: 2rem; }
+  </style>
+</head>
+<body>
+  <div id="redoc"></div>
+  <div id="msg" hidden>No spec supplied. Use ?spec=/api-specs/&lt;name&gt;.json</div>
+  <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
+  <script>
+    (function () {
+      var spec = new URLSearchParams(window.location.search).get('spec');
+      if (!spec) { document.getElementById('msg').hidden = false; return; }
+      Redoc.init(
+        spec,
+        {
+          hideDownloadButton: false,
+          expandResponses: '200,201',
+          requiredPropsFirst: true,
+          sortPropsAlphabetically: false,
+          theme: {
+            colors: { primary: { main: '#00347d' } },
+            typography: {
+              fontFamily: 'Segoe UI, Roboto, Helvetica, Arial, sans-serif',
+              headings: { fontFamily: 'Segoe UI, Roboto, Helvetica, Arial, sans-serif' }
+            }
+          }
+        },
+        document.getElementById('redoc')
+      );
+    })();
+  </script>
+</body>
+</html>

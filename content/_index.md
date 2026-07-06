@@ -1,40 +1,29 @@
 ---
-title: Development Portal
-description:  Norwegian Maritime Directorate (Sdir) API
+title: Utviklerportal for Sdir API
+description: Teknisk dokumentasjon for Sjøfartsdirektoratets API-er.
 jumbotron: true
 ---
 
 # Sdir API
 
-<p class="a-leadText">The main purpose of this website is to provide a developer with information on how to connect and use the Norwegian Maritime Directorate's (Sdir) API. Using our apis, you can retrieve available information, as well as report information directly from external systems. </p>
-
+<p class="a-leadText">Velkommen til Sjøfartsdirektoratets utviklerportal. Her finner du den tekniske dokumentasjonen du trenger for å ta i bruk API-ene våre – enten dere skal hente informasjon fra Sdir eller rapportere data direkte fra egne fagsystemer. API-ene gjør at virksomheter som rederier, kursleverandører og andre aktører kan integrere sine systemer med Sjøfartsdirektoratet.</p>
 
 <div class="a-card a-cardImage mt-3 mb-3">
   <div class="a-cardImage-text">
-    <a href="/get-started/" class="a-linkFeatured ">
-      Getting started
+    <a href="/brukerveileder-systemleverandorer/" class="a-linkFeatured">
+      Brukerveileder for systemleverandører
       <i class="ai ai-sm ai-nw ai-nw-right ai-arrowright"></i>
     </a>
-    <p class="pt-1">How to get necessary access and get started.</p>
+    <p class="pt-1">Slik kobler dere systemene deres til Sdir sine API-er på vegne av en virksomhet – tilgang, Maskinporten og oppsett steg for steg.</p>
   </div>
 </div>
 
 <div class="a-card a-cardImage mt-3 mb-3">
   <div class="a-cardImage-text">
-    <a href="/rest-api/" class="a-linkFeatured">
-      Sdir REST API
+    <a href="/api-reference/" class="a-linkFeatured">
+      API-referanse
       <i class="ai ai-sm ai-nw ai-nw-right ai-arrowright"></i>
     </a>
-    <p class="pt-1">Take a look at the different REST APIs that Sdir provide.</p>
-  </div>
-</div>
-
-<div class="a-card a-cardImage mt-3 mb-3">
-  <div class="a-cardImage-text">
-    <a href="/release-notes/" class="a-linkFeatured">
-      Release notes
-      <i class="ai ai-sm ai-nw ai-nw-right ai-arrowright"></i>
-    </a>
-    <p class="pt-1">Check out the latest releases.</p>
+    <p class="pt-1">Utforsk API-ene Sdir tilbyr, med endepunkter, parametere, modeller og autentisering.</p>
   </div>
 </div>

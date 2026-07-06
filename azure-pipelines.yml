@@ -7,12 +7,27 @@ trigger:
     include:
       - master
 
+variables:
+  # Azure DevOps service connection (ARM) with read access to the prod APIM.
+  # The subscription, resource group and APIM name are derived at runtime from
+  # this connection (see scripts/generate-api-reference.sh), so no infrastructure
+  # identifiers are stored in this public repo.
+  apimServiceConnection: "sdir-p-subs"
+
 jobs:
   - job: build_site
     pool:
       vmImage: "ubuntu-latest"
 
     steps:
+      - task: AzureCLI@2
+        displayName: Generate API reference from APIM
+        inputs:
+          azureSubscription: "$(apimServiceConnection)"
+          scriptType: bash
+          scriptLocation: scriptPath
+          scriptPath: "$(System.DefaultWorkingDirectory)/scripts/generate-api-reference.sh"
+
       - task: Docker@2
         displayName: Build Hugo site
         inputs:

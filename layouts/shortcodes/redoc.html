@@ -1,0 +1,17 @@
+{{- /*
+  Embeds an OpenAPI spec as a Swagger-style reference (Redoc).
+  Usage: {{< redoc spec="/api-specs/los-ecertificate-external.json" >}}
+         {{< redoc spec="..." height="720px" >}}   (shorter frame when a guide
+         follows below the reference)
+
+  Redoc is rendered inside an <iframe> pointing at /redoc/ so the site theme's
+  global CSS cannot leak into (and break) Redoc's own styling. The spec files
+  and pages are produced at build time by scripts/generate-api-reference.sh
+*/ -}}
+{{- $height := .Get "height" | default "calc(100vh - 160px)" -}}
+<iframe
+  class="redoc-frame"
+  style="width:100%;height:{{ $height }};min-height:600px;border:1px solid #e1e4e8;border-radius:4px;"
+  src="{{ "redoc/" | relURL }}?spec={{ .Get "spec" }}"
+  title="API reference"
+  loading="lazy"></iframe>

@@ -1,12 +1,11 @@
----
-title: ECertificate-Insurance
-description: The ECertificate-Insurance service is used for creating CLB and CLC certificates for vessels.
+﻿---
+title: Certificate Order
+description: Request/response examples and issuance flows for the ECertificate service.
 toc: true
-weight: 5
 ---
 
-
-## Certificate Order 
+## Certificate Order
+```
 
 `POST` /api/order
 
@@ -20,7 +19,7 @@ Authorization required
   "Initiator": "", // Required. e.g. GARD, SKULD
   "CertificateType": "CLB", // CLB, CLC
   "OperationType": "Create", // Create, Cancel. Defaults to Create
-  "ValidFrom": { 
+  "ValidFrom": {
     "Date": "2023-04-20T00:00:00+00:00" // Certificate valid from date
   },
   "ValidTo": {
@@ -37,7 +36,7 @@ Authorization required
     "ConstructionNumber": "", // Construction Number. Not required. Used for TrialRun
     "Shipyard": "", // Shipyard. Not required. Used for TrialRun
     "Owners": {
-      "Owner": [ // List of all owners who are registered in Skipsregistrene 
+      "Owner": [ // List of all owners who are registered in Skipsregistrene
         {
           "Name": "Color Line Cruises AS", // Name of owner
           "Address": { // The address must match one of the registered address of to the owner in Skipsregistrene
@@ -56,7 +55,7 @@ Authorization required
   },
   "NotificationEmailAddresses": [ // List of emails who will receive the issued certificate
     {
-      "Address": "ola@nordmann.no", // Email address 
+      "Address": "ola@nordmann.no", // Email address
       "DisplayName": null // Not required. Display name in email client
     }
   ]
@@ -92,7 +91,7 @@ Authorization required
 
 
 ### C - Certificate issuance for new builds going on trial run
-1. Submit the order. The field "TrialRun" must be set to TRUE. You must include the fields "ConstructionNumber" and "Shipyard". 
+1. Submit the order. The field "TrialRun" must be set to TRUE. You must include the fields "ConstructionNumber" and "Shipyard".
 2. Receive "Trial OK" or an error message ([Read more about error messages](#error-messages)).
 3. [See General Info](#general-info):
     - Trial run orders cannot be combined with "AwaitingVesselChanges".
@@ -135,7 +134,7 @@ Authorization required
 Authorization required
 
 
-### Request Body 
+### Request Body
 ```json
 {
   "orderId": "00000000-0000-0000-0000-000000000000", // OrderId from /api/order

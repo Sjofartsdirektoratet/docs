@@ -1,0 +1,19 @@
+{
+  "_README": "Norwegian display names for the API reference, keyed by APIM API path. Edit the values freely. Any API without an entry falls back to its English name. The group prefix (e.g. 'Sjøfolk - ') is added automatically by generate-api-reference.sh and should NOT be included here.",
+
+  "aps-additionalcompetence-external": "Tilleggskompetanse",
+  "aps-application-external": "Sertifikatsøknad",
+  "aps-assessor-external": "Bedømmelse",
+  "aps-course-external": "Kurs",
+  "aps-dispensation-external": "Dispensasjon",
+  "aps-endorsement-external": "Påtegning",
+  "aps-health-external": "Helse",
+  "aps-personalcertificate-external": "Personligsertifikat",
+  "aps-seagoing-external": "Fartstid",
+
+  "core-commonvessel-external": "Fartøy",
+  "et-digitalcertificate-external": "Fartøy - Sertifikat",
+  "grants-seafarerstatement-external": "Tilskudd - Sjømannserklæring",
+  "los-ecertificate-external": "Fartøy - Forsikrings-sertifikat",
+  "los-radiolicense-external": "Fartøy - Radiolisens"
+}

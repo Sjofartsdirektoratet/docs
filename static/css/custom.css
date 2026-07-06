@@ -482,3 +482,13 @@ a[href^=http]:not([href*='altinndigital.no']):not([href*='https://altinnett.brre
         margin-left: 38px;
     }
 }
+
+/* Use the full window width on every page instead of the centered,
+   max-width-limited docs column. */
+.container {
+    max-width: 100% !important;
+}
+
+#body-inner {
+    max-width: 100% !important;
+}
