@@ -184,7 +184,7 @@ apiPath: "$apath"
 apiVersion: "$ver"
 ---
 
-{{< redoc spec="/api-specs/$slug.json" height="720px" >}}
+{{< redoc spec="/api-specs/$slug.json" >}}
 
 {{% children description="true" %}}
 EOF

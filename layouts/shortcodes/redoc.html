@@ -1,17 +1,25 @@
 {{- /*
   Embeds an OpenAPI spec as a Swagger-style reference (Redoc).
-  Usage: {{< redoc spec="/api-specs/los-ecertificate-external.json" >}}
-         {{< redoc spec="..." height="720px" >}}   (shorter frame when a guide
-         follows below the reference)
+  Usage: {{< redoc spec="/api-specs/commonvessel.json" >}}
 
   Redoc is rendered inside an <iframe> pointing at /redoc/ so the site theme's
-  global CSS cannot leak into (and break) Redoc's own styling. The spec files
-  and pages are produced at build time by scripts/generate-api-reference.sh
+  global CSS cannot leak into (and break) Redoc's own styling. The frame fills
+  the viewport so Redoc's own single-scroll layout is used (no tiny inner box).
+
+  The height lives in a static <style> block, NOT an inline style attribute:
+  Hugo/Go's html/template sanitises calc() inside style="" to "ZgotmplZ".
 */ -}}
-{{- $height := .Get "height" | default "calc(100vh - 160px)" -}}
+<style>
+  .redoc-frame {
+    width: 100%;
+    height: calc(100vh - 140px);
+    min-height: 640px;
+    border: 0;
+    display: block;
+  }
+</style>
 <iframe
   class="redoc-frame"
-  style="width:100%;height:{{ $height }};min-height:600px;border:1px solid #e1e4e8;border-radius:4px;"
   src="{{ "redoc/" | relURL }}?spec={{ .Get "spec" }}"
   title="API reference"
   loading="lazy"></iframe>
