@@ -124,6 +124,10 @@ echo "$products_json" | jq -c '.[]' | while read -r product; do
       continue
     fi
 
+    # The blob name in the SAS link can contain spaces; encode them so curl
+    # accepts the URL.
+    link="${link// /%20}"
+
     if ! curl -fsS "$link" -o "$SPEC_DIR/$slug.json"; then
       echo "  !! skipping $aid (failed to download spec)"
       skipped=$((skipped + 1))
