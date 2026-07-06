@@ -19,7 +19,9 @@
 <body>
   <div id="redoc"></div>
   <div id="msg" hidden>No spec supplied. Use ?spec=/api-specs/&lt;name&gt;.json</div>
-  <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
+  <!-- Self-hosted so it loads from 'self' and is allowed by the site's CSP
+       (external CDN scripts are blocked). Update the file to upgrade Redoc. -->
+  <script src="/js/redoc.standalone.js"></script>
   <script>
     (function () {
       var spec = new URLSearchParams(window.location.search).get('spec');
