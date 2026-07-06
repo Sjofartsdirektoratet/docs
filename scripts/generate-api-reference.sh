@@ -52,7 +52,6 @@ rm -rf "$CONTENT_DIR" "$SPEC_DIR"
 mkdir -p "$CONTENT_DIR" "$SPEC_DIR"
 
 az account set --subscription "$SUB"
-TOKEN="$(az account get-access-token --resource https://management.azure.com --query accessToken -o tsv)"
 
 # YAML-escape a value for use inside a double-quoted front-matter string.
 yq_escape() { printf '%s' "$1" | sed 's/\\/\\\\/g; s/"/\\"/g'; }
@@ -111,9 +110,11 @@ echo "$products_json" | jq -c '.[]' | while read -r product; do
         continue ;;
     esac
 
-    # Export the OpenAPI (v3) definition via ARM. %2B == '+' in openapi+json-link.
+    # Export the OpenAPI (v3) definition via ARM, using `az rest` so it uses the
+    # service connection's auth context directly (robust with workload identity
+    # federation). %2B == '+' in openapi+json-link.
     export_url="https://management.azure.com/subscriptions/$SUB/resourceGroups/$RG/providers/Microsoft.ApiManagement/service/$SVC/apis/$aid?export=true&format=openapi%2Bjson-link&api-version=$API_VERSION"
-    link="$(curl -fsS -H "Authorization: Bearer $TOKEN" "$export_url" | jq -r '.value.link // empty')"
+    link="$(az rest --method get --url "$export_url" --query 'value.link' -o tsv)"
 
     if [ -z "$link" ]; then
       echo "  !! skipping $aid (no OpenAPI export available)"
