@@ -114,14 +114,9 @@ echo "$products_json" | jq -c '.[]' | while read -r product; do
     # service connection's auth context directly (robust with workload identity
     # federation). %2B == '+' in openapi+json-link.
     export_url="https://management.azure.com/subscriptions/$SUB/resourceGroups/$RG/providers/Microsoft.ApiManagement/service/$SVC/apis/$aid?export=true&format=openapi%2Bjson-link&api-version=$API_VERSION"
-    link="$(az rest --method get --url "$export_url" --query 'value.link' -o tsv)"
-
-    if [ -z "$link" ] && [ -z "${dbg_done:-}" ]; then
-      dbg_done=1
-      echo "=== DEBUG raw export response for $aid ==="
-      az rest --method get --url "$export_url" || echo "(az rest exit $?)"
-      echo "=== DEBUG END ==="
-    fi
+    # The export link is returned either at the top level (.link) or nested
+    # (.value.link) depending on the format/response envelope, so accept both.
+    link="$(az rest --method get --url "$export_url" | jq -r '.value.link // .link // empty')"
 
     if [ -z "$link" ]; then
       echo "  !! skipping $aid (no OpenAPI export available)"
